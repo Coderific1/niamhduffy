@@ -2,7 +2,7 @@ html, body {
     padding: 0px;
     margin: 0px;
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 body {
     background-color: #FFE0E3;
     color: black;
-    height: auto;
+    height: 100vh;
 }
 
 * {
@@ -92,11 +92,18 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
 }
 
 .caption {
     text-align: center;
     background-color: seashell;
+    font-size: 1.6rem;
+    opacity: 0.7;
+    border: 1px dashed #73ccf5;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 
 /* Footer Section */
@@ -149,7 +156,7 @@ footer {
 
 /* FOR MOBILE DEVICES */
 
-@media only screen and (min-width: 200px) and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
     html {
         font-size: 9px;
         width: 100vw;
@@ -170,5 +177,8 @@ footer {
         height: 35px;
         width: 35px;
         min-width: 35px;
-    }    
+    }
+    .caption {
+        font-size: 1rem;
+    }
 }
