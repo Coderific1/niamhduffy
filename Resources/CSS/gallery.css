@@ -1,0 +1,169 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: auto;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #FFE0E3;
+    color: black;
+    height: auto;
+}
+
+* {
+    /*border: 1px solid red;*/
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header Section */
+
+header {
+    width: 100%;
+    height: 8%;
+}
+
+#head-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 100%;
+}
+
+header #head-content h2 {
+    color: black;
+    position: relative;
+    text-align: center;
+    left: 10%;
+    font-size: 1.8rem;
+}
+
+#head-content ul {
+    display: flex;
+    position: relative;
+    align-items: center;
+    right: 10%;
+}
+
+header #head-content ul a {
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0px 10px;
+}
+
+/* Main Section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+#photo-container {
+    height: 60%;
+    width: 90%;
+    margin: 20px 20px;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    gap: 2%;
+}
+
+.photo-card {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer Section */
+
+footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #73ccf5;
+}
+
+#foot-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#social-media {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#social-media a {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    align-self: center;
+    border-radius: 50%;
+}
+
+#social-media a img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.logo {
+    background-color: white;
+}
+
+/* FOR MOBILE DEVICES */
+
+@media only screen and (min-width: 200px) and (max-width: 450px) {
+    html {
+        font-size: 9px;
+        width: 100vw;
+        height: 100vh;
+    }
+    #head-content ul {
+        right: 2%;
+    }
+    header #head-content ul a {
+        font-size: 1.4rem;
+        padding: 0px 5px;
+    }
+    header #head-content h2 {
+        left: 5%;
+        font-size: 1.6rem;
+    }
+    #social-media a {
+        height: 35px;
+        width: 35px;
+        min-width: 35px;
+    }    
+}
