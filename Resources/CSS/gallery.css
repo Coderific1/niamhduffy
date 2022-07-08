@@ -65,14 +65,14 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
+    min-height: 100vh;
     width: 100%;
 }
 
 #photo-container {
     height: 60%;
     width: 90%;
-    margin: 20px 20px;
+    margin: 10% 20px;
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     gap: 2%;
@@ -94,6 +94,11 @@ main {
     object-fit: cover;
 }
 
+.caption {
+    text-align: center;
+    background-color: seashell;
+}
+
 /* Footer Section */
 
 footer {
@@ -103,7 +108,7 @@ footer {
     align-content: center;
     bottom: 0;
     left: 0;
-    height: 10%;
+    height: 5.5rem;
     width: 100%;
     background-color: #73ccf5;
 }
