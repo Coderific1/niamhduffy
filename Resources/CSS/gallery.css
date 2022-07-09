@@ -21,7 +21,7 @@ body {
     color: black;
     min-height: 100vh;
     display: grid;
-    grid-template: 8% 1fr 5.5rem / 100%;
+    grid-template: 7rem 1fr 5.5rem / 100%;
     /*For newly added photos */
     grid-auto-rows: auto;
     grid-auto-flow: row;
@@ -78,7 +78,8 @@ main {
     width: 90%;
     margin: 5%;
     display: grid;
-    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-template: repeat(9, auto) / repeat(4, 1fr);
+    grid-auto-flow: dense;
 }
 
 .photo-card {
@@ -87,7 +88,7 @@ main {
     object-fit: cover;
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 1%;
 }
 
 .photo {
@@ -96,13 +97,21 @@ main {
     object-fit: cover;
 }
 
-.caption {
+.pic2, .pic3, .pic7, .pic8, .pic11, .pic13, .pic14, .pic16, .pic17, .pic18 {
+    grid-column-start: span 2 ;
+}
+
+.pic19 {
+    grid-area: span 2 / span 4;
+}
+
+/*.caption {
     text-align: center;
     background-color: seashell;
     font-size: 1.6rem;
     opacity: 0.7;
     border: 1px dashed #73ccf5;
-}
+}*/
 
 /* Footer Section */
 
