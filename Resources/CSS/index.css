@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     list-style: none;
     text-decoration: none;
     margin: 0;
@@ -22,8 +22,6 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template: 8% 1fr 5.5rem / 1fr;
-    /*flex-direction: column;
-    justify-content: space-between;*/
 }
 
 main {
@@ -34,7 +32,6 @@ main {
 
 header {
     width: 100%;
-    /*height: 8%;*/
 }
 
 #head-content {
@@ -105,8 +102,6 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
-    /*margin-top: auto;
-    height: 5.5rem;*/
     width: 100%;
     background-color: #73ccf5;
 }
