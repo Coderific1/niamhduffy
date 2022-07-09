@@ -21,7 +21,7 @@ body {
     color: black;
     min-height: 100vh;
     display: grid;
-    grid-template: 8% 1fr 5.5rem / 1fr;
+    grid-template: 7rem 1fr 5.5rem / 1fr;
 }
 
 main {
@@ -61,7 +61,9 @@ header #head-content ul a {
     color: black;
     text-align: center;
     font-size: 1.6rem;
-    padding: 0px 10px;
+    padding: 5px 10px;
+    border: 2px dashed pink;
+    margin: 0px 2px;
 }
 
 /* Main Section */
