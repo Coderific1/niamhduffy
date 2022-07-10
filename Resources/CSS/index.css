@@ -1,0 +1,83 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #FFE0E3;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.login-form {
+    max-width: 70%;
+    padding: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    position: absolute;
+    border: 2px dashed pink;
+    border-radius: 25px;
+    background: white;
+}
+
+.login-form p {
+    visibility: hidden;
+    color: red;
+    width: 0;
+    height: 0;
+}
+
+.login-form h1 {
+    background: black;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid #47afff;
+    border-radius: 24px;
+}
+
+.login-form input[type="text"], .login-form input[type="password"] {
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid black;
+    padding: 14px 10px;
+    min-width: 180px;
+    width: 80%;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 24px;
+    transform: 0.25px;
+}
+
+.login-form input[type="text"]:focus, .login-form input[type="password"]:focus {
+    width: 90%;
+    border: 3px solid #47afff;
+}
+
+.login-form input[type="submit"] {
+    border: 0;
+    background: black;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid #47afff;
+    padding: 14px 10px;
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 24px;
+    transform: 0.25px;
+    padding: 12px 35px;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background: #47afff;
+    color: black;
+}
