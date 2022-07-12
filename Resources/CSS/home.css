@@ -47,7 +47,8 @@ header #head-content h2 {
     position: relative;
     text-align: center;
     left: 10%;
-    font-size: 1.8rem;
+    font-family: "Great Vibes";
+    font-size: 2.5rem;
 }
 
 #head-content ul {
@@ -63,7 +64,7 @@ header #head-content ul a {
     font-size: 1.6rem;
     padding: 5px 10px;
     border: 2px dashed pink;
-    margin: 0px 2px;
+    margin: 0px 10px;
 }
 
 /* Main Section */
@@ -153,10 +154,11 @@ footer {
     header #head-content ul a {
         font-size: 1.4rem;
         padding: 0px 5px;
+        margin: 0px 2px;
     }
     header #head-content h2 {
-        left: 5%;
-        font-size: 1.6rem;
+        left: 8%;
+        font-size: 2.1rem;
     }
     #social-media a {
         height: 35px;
